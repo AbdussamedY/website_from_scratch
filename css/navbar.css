@@ -1,26 +1,38 @@
-/* Style the top navigation bar */
-.navbar {
-    overflow: hidden; /* Hide overflow */
-    background-color: #333; /* Dark background color */
+.NAVBAR {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Style the navigation bar links */
-.navbar a {
-    float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: white; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 14px 20px; /* Add some padding */
-    text-decoration: none; /* Remove underline */
+.NAVBAR .lab_name{
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    color:rgb(212, 212, 212);
+    padding: 0 10px;
 }
 
-/* Right-aligned link */
-.navbar a.right {
-    float: right; /* Float a link to the right */
+
+.NAVBAR .navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-/* Change color on hover/mouse-over */
-.navbar a:hover {
-    background-color: #ddd; /* Grey background color */
-    color: black; /* Black text color */
+.NAVBAR .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.NAVBAR .navbar .hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .NAVBAR .navbar a {
+        display: none;
+    }
+    .NAVBAR .navbar .hamburger {
+        display: flex;
+    }
 }
