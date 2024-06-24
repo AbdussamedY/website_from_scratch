@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.header .lab_name{
+    font: 'DM Serif Display';
+    font-size:20px;
+}
