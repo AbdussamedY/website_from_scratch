@@ -24,15 +24,12 @@
     padding: 0px 20px;
 }
 
-.NAVBAR .navbar .hamburger {
-    display: none;
-}
+
+
 
 @media screen and (max-width: 800px) {
     .NAVBAR .navbar a {
         display: none;
     }
-    .NAVBAR .navbar .hamburger {
-        display: flex;
-    }
+
 }
