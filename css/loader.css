@@ -1,0 +1,84 @@
+  div.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: #11101d;
+  }
+  .dynamic-logo{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.dynamic-logo span{
+    position: absolute;
+    width:50%;
+    height:50%;
+    border-radius:50%;
+    border-left: 7px rgb(14, 119, 10) solid;
+    /* border-top: 10px transparent solid; */
+    border-right: 7px rgb(14, 119, 10) solid;
+  }
+  div.dynamic-logo span:nth-last-of-type(1){
+    animation: ani-1 1.5s linear infinite;
+  }
+  div.dynamic-logo span:nth-last-of-type(2){
+    animation: ani-2 1.5s linear infinite;
+  }
+  div.dynamic-logo span:nth-last-of-type(3){
+    animation: ani-3 1.5s linear infinite;
+  }
+  @keyframes ani-1 {
+    from{
+      transform:
+      rotateZ(120deg)
+      rotateX(55deg)
+      rotateZ(0deg)
+    }
+    to{
+      transform:
+      rotateZ(120deg)
+      rotateX(55deg)
+      rotateZ(360deg)
+    }
+  }
+  @keyframes ani-2 {
+    from{
+      transform:
+      rotateZ(240deg)
+      rotateX(55deg)
+      rotateZ(0deg)
+    }
+    to{
+      transform:
+      rotateZ(240deg)
+      rotateX(55deg)
+      rotateZ(360deg)
+    }
+  }
+  @keyframes ani-3 {
+    from{
+      transform:
+      rotateZ(360deg)
+      rotateX(55deg)
+      rotateZ(0deg)
+    }
+    to{
+      transform:
+      rotateZ(360deg)
+      rotateX(55deg)
+      rotateZ(360deg)
+    }
+  }
+
+
+  .fondu-out{
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  div.loader.fondu-out{
+    z-index: -100;
+  }
