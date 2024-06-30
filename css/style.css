@@ -144,9 +144,13 @@ body {
   padding-left: 50px;
   font-size: 18px;
   color: #fff;
+  transition: 0.5s ease;
+}
+.sidebar.active ul li input {
+  padding-left: 60px;
 }
 
-.sidebar ul li .bx-search {
+.sidebar ul li .search {
   position: absolute;
   z-index: 99;
   color: #fff;
@@ -155,7 +159,7 @@ body {
   background-color: #1d1b31;
 }
 
-.sidebar ul li .bx-search:hover {
+.sidebar ul li .search:hover {
   color: #11101d;
   background-color: #fff;
 }

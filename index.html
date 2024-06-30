@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>SensoMotion</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 </head>
 <body>
+
+    <div class="loader">
+        include
+    </div>
+
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
@@ -17,48 +26,48 @@
                     <div class="team_name">SENSOMOTION</div>
                 </div>
             </div>
-            <i class="bx bx-menu" id="btn"></i>
+            <i class="bx bx-chevrons-left" id="btn"></i>
         </div>
         <ul class="nav_list">
             <li>
-                <i class="bx bx-search"></i>
+                <i class="material-icons search">search</i>
                 <input type="text" placeholder="Search...">
                 <span class="tooltip">Search</span>
             </li>
             <li>
                 <a href="#">
-                    <i class="bx bx-grid alt"></i>
-                    <span class="links_name">Dashboard</span>
+                    <i class="material-icons">home</i>
+                    <span class="links_name">Home</span>
                 </a>
-                <span class="tooltip">Dashboard</span>
+                <span class="tooltip">Home</span>
             </li>
             <li>
                 <a href="#">
-                    <i class="bx bx-user"></i>
-                    <span class="links_name">User</span>
+                    <i class="material-icons">group</i>
+                    <span class="links_name">Members</span>
                 </a>
-                <span class="tooltip">User</span>
+                <span class="tooltip">Members</span>
             </li>
             <li>
                 <a href="#">
-                    <i class="bx bx-chat"></i>
-                    <span class="links_name">Chat</span>
+                    <i class="bx bxs-file"></i>
+                    <span class="links_name">Publications</span>
                 </a>
-                <span class="tooltip">Chat</span>
+                <span class="tooltip">Publications</span>
             </li>
             <li>
                 <a href="#">
-                    <i class="bx bx-pie-chart-alt-2"></i>
-                    <span class="links_name">Analytic</span>
-                </a>
-                <span class="tooltip">Analytic</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="bx bx-folder"></i>
+                    <i class="material-icons">description</i>
                     <span class="links_name">Files</span>
                 </a>
                 <span class="tooltip">Files</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons">school</i>
+                    <span class="links_name">Alumni</span>
+                </a>
+                <span class="tooltip">Alumni</span>
             </li>
         </ul>
         <div class="profile_content">
@@ -81,7 +90,7 @@
     <script>
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".sidebar");
-        let searchBtn = document.querySelector(".bx-search");
+        let searchBtn = document.querySelector(".search");
 
         btn.onclick = function() {
             sidebar.classList.toggle("active");
