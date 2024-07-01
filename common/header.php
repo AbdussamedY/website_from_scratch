@@ -19,13 +19,3 @@
     <?php include 'includes\loader.php';?>
 
     <?php include 'includes\sidebar.php';?>
-
-    
-    <div class="main_content">
-        <div class="text">Home Content</div>
-    </div>
-
-    <script src='js/click-sidebar.js'></script>
-
-</body>
-</html>

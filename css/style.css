@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-  --side-active-width: 300px;
-  --side-inactive-width: 78px;
-  --dark-color: #11101d;
-  --inactive-color: #fff;
-  --active-color: #cf76d4;
-  --logo-size: 60px;
-  --navbar-icon-size: 50px;
-}
+
 
 * {
   margin: 0;
@@ -46,7 +38,7 @@ body {
 }
 
 .sidebar .logo_content .logo {
-  color: var(--inactive-color);
+  color: var(--font-color);
   display: flex;
   height: 100%;
   align-items: center;
@@ -66,7 +58,7 @@ body {
 .sidebar .logo_content .logo .logo_name .team {
   font-size: 15px;
   font-weight: 200;
-  color: var(--inactive-color);
+  color: var(--font-color);
   white-space: nowrap;
   text-align: left;
 }
@@ -74,7 +66,7 @@ body {
 .sidebar .logo_content .logo .logo_name .team_name {
   font-size: 20px;
   font-weight: 400;
-  color: var(--inactive-color);
+  color: var(--font-color);
   white-space: nowrap;
   text-align: left;
 }
@@ -92,7 +84,7 @@ body {
   width: 50px;
   text-align: center;
   line-height: 50px;
-  color: var(--inactive-color);
+  color: var(--font-color);
   transition: 0.5 ease;
   opacity: 0;
   cursor: pointer;
@@ -133,7 +125,7 @@ body {
   background-color: #1d1b31;
   padding-left: 50px;
   font-size: 18px;
-  color: var(--inactive-color);
+  color: var(--font-color);
   transition: 0.5s ease;
 }
 .sidebar.active ul li input {
@@ -143,19 +135,19 @@ body {
 .sidebar ul li .search {
   position: absolute;
   z-index: 99;
-  color: var(--inactive-color);
+  color: var(--font-color);
   font-size: 20px;
   border-radius: 12px;
-  background-color: #1d1b31;
+  background-color: var(--med-color);
 }
 
 .sidebar ul li .search:hover {
-  color: #11101d;
-  background-color: var(--inactive-color);
+  color: var(--dark-color);
+  background-color: var(--font-color);
 }
 
 .sidebar ul li a {
-  color: var(--inactive-color);
+  color: var(--font-color);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -165,8 +157,8 @@ body {
 }
 
 .sidebar ul li a:hover {
-  color: #11101d;
-  background-color: var(--inactive-color);
+  color: var(--dark-color);
+  background-color: var(--font-color);
 }
 
 .sidebar ul li i {
@@ -221,7 +213,7 @@ body {
   margin-bottom: 10px;
   left: 0;
   width: 100%;
-  color: var(--inactive-color);
+  color: var(--font-color);
 }
 
 .sidebar .profile_content .profile {
@@ -242,7 +234,7 @@ body {
 .sidebar.active .profile_content .profile .profile_details {
   opacity: 1;
   pointer-events: auto;
-  background-color: #1d1b31;
+  background-color: var(--med-color);
   transition: all 0.5s ease;
 }
 
@@ -278,7 +270,7 @@ body {
   border-radius: 12px;
   text-align: center;
   cursor: pointer;
-  background: #1d1b31;
+  background: var(--med-color);
   transition: all 0.5s ease;
 }
 
@@ -287,21 +279,73 @@ body {
   background: none;
 }
 
-.home_content {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_content {
   position: absolute;
-  width: calc(100% - 78px);
+  width: calc(100% - var(--side-inactive-width));
   left: 78px;
   height: 100%;
   background-color: none;
   transition: all 0.5s ease;
 }
 
-.sidebar.active~.home_content {
-  width: calc(100% - 300px);
-  left:300px;
+.sidebar.active~.main_content {
+  width: calc(100% - var(--side-active-width));
+  left: var(--side-active-width);
 }
 
-.home_content .text {
+.main_content .text {
   font-size: 25px;
   font-weight: 500;
   color: #1d1b31;
