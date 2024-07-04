@@ -2,8 +2,8 @@
 div.loader{
   position: absolute;
   margin: 14px;
-  width: 10cm;
-  height: 10cm;
+  width: 8cm;
+  height: 8cm;
   justify-content: center;
   align-items: center;
   z-index: 50;
@@ -19,9 +19,11 @@ div.dynamic-logo span{
   width:100%;
   height:100%;
   border-radius:50%;
-  border-left: 1px rgb(14, 119, 10) solid;
+  border-left: 4px rgb(19, 106, 16) solid;
+  border-top: 4px rgb(19, 106, 16) solid;
+  border-right: 4px rgb(19, 106, 16) solid;
   /* border-top: 10px transparent solid; */
-  border-right: 1px rgb(14, 119, 10) solid;
+  /* border-right: 5px rgb(14, 119, 10) solid; */
 }
 div.dynamic-logo span:nth-last-of-type(1){
   animation: ani-1 1.5s linear infinite;
@@ -91,8 +93,8 @@ div.dynamic-logo span:nth-last-of-type(3){
         <span></span>
         <svg
           class="logo-brain"
-          width="50%"
-          height="50%"
+          width="40%"
+          height="40%"
           viewBox="0 0 13.834354 12.905601"
           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
