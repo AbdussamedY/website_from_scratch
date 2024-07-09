@@ -1,12 +1,24 @@
 <div class="profile_content">
     <div class="profile">
         <div class="profile_details">
-            <img src="images/abdussamed.jpeg" alt="">
+            <a href="account.php">
+                <img src=<?php echo $_SESSION['profile_picture']?> alt="Profile picture" class="profile_picture">
+            </a>
             <div class="name_job">
-                <div class="name">Abdussamed Yazici</div>
-                <div class="job">PhD student</div>
+                <div class="name">
+                    <?php 
+                        echo $_SESSION['firstname']; 
+                    ?>
+                </div>
+                <div class="job">
+                    <?php 
+                        echo $_SESSION['position']; 
+                    ?>
+                </div>
             </div>
         </div>
-        <i class="bx bx-log-out" id="log_out"></i>
+        <form method="post" action="connexion/logout.php">
+            <button type="submit"><i class="material-icons icon">logout</i></button>
+        </form>
     </div>
 </div>

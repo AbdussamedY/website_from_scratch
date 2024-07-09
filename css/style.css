@@ -16,6 +16,20 @@ body {
   overflow: hidden;
 }
 
+.error-banner{
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  background: color(display-p3 0.665 0.076 0.076);
+  min-width: 95vw;
+  padding: 6px 0;
+  color: color(srgb 0.9 0.9 0.9);
+  border-radius: 10px;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -235,14 +249,20 @@ body {
   opacity: 1;
   pointer-events: auto;
   background-color: var(--med-color);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
+  border-radius: 12px;
 }
 
-.sidebar .profile_content .profile .profile_details img {
+/* sidebar .profile_content .profile .profile_details a {
+  text-decoration: none;
+} */
+
+.profile_picture {
   height: 50px;
   width: 50px;
   border-radius: 12px;
   object-fit: cover;
+  display: block;
 }
 
 .sidebar .profile_content .profile .profile_details .name_job {
@@ -259,7 +279,7 @@ body {
   font-weight: 400;
 }
 
-.sidebar #log_out {
+.sidebar .profile_content .profile .icon {
   position: absolute;
   left: 50%;
   bottom: 0px;
@@ -272,9 +292,12 @@ body {
   cursor: pointer;
   background: var(--med-color);
   transition: all 0.5s ease;
+  color: rgb(111, 138, 185)
 }
 
-.sidebar.active #log_out {
+
+
+.sidebar.active .profile_content .profile .icon {
   left: 88%;
   background: none;
 }

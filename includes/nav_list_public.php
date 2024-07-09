@@ -10,19 +10,19 @@
         </a>
     </li>
     <li>
-        <a href="navigation/publications.php">
+        <a href="publications.php">
             <i class="material-icons">description</i>
             <span class="links_name">Publications</span>
         </a>
     </li>
     <li>
-        <a href="navigation/members.php">
+        <a href="members.php">
             <i class="material-icons">group</i>
             <span class="links_name">Members</span>
         </a>
     </li>
     <li>
-        <a href="navigation/alumni.php">
+        <a href="alumni.php">
             <i class="material-icons">school</i>
             <span class="links_name">Alumni</span>
         </a>

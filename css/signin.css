@@ -17,6 +17,20 @@ body{
     align-items: center;
 }
 
+.error-banner{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    background: color(display-p3 0.665 0.076 0.076);
+    min-width: 95vw;
+    padding: 6px 0;
+    color: color(srgb 0.9 0.9 0.9);
+    border-radius: 10px;
+}
+
 .central-box{
     width: 1000px;
     height: 500px;
@@ -122,12 +136,17 @@ body{
     font-weight: 600;
     font-size: 30px;
     color:white;
+    display: flex;
+    justify-content: center;
 }
 .Form .inputs{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+
+
 .Form .input-field, select{
     height: 50px;
     min-width: 350px;
@@ -202,6 +221,21 @@ select option:checked {
 .inputs .input-box .input-submit:hover{
     /* opacity: 0.85; */
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+.registerForm .inputs .input-box .error {
+    border: 1px solid red;
+}
+.registerForm .inputs .input-box .disable {
+    background: #34395f;
+    cursor: not-allowed;
+    transition: 0.3s;
 }
 
 

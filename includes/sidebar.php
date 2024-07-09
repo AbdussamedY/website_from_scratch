@@ -11,11 +11,11 @@
             <i class="material-icons" id="btn">menu_open</i>
         </div>
         
-        <?php include 'includes\nav_list_public.php';?>
+        <?php include 'includes' . DIRECTORY_SEPARATOR . 'nav_list_public.php'; ?>
 
         <?php
-            if (isset($_SESSION['password'])) {
-                include 'includes/nav_list_private.php';
+            if (isset($_SESSION['username'])) {
+                include 'includes' . DIRECTORY_SEPARATOR . 'nav_list_private.php';
             }
         ?>
 
@@ -23,10 +23,10 @@
     </div>
     
     <?php
-        if (isset($_SESSION['password'])) {
-            include 'includes/profile_content.php';
+        if (isset($_SESSION['username'])) {
+            include 'includes' . DIRECTORY_SEPARATOR . 'profile_content.php';
         }else{
-            include 'includes/signin_content.php';
+            include 'includes' . DIRECTORY_SEPARATOR . 'signin_content.php';
         }
     ?>
         

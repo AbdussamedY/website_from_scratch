@@ -1,5 +1,5 @@
-<?php
-?>
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 </head>
 <body>
+    <?php
+        // Afficher le message d'erreur s'il existe
+        if (isset($_GET['error'])) {
+            echo '<div class="error-banner">' . htmlspecialchars($_GET['error']) . '</div>';
+        }
+    ?>
 
-    <?php include 'includes\loader.php';?>
+    <?php include 'includes' . DIRECTORY_SEPARATOR . 'loader.php';?>
 
-    <?php include 'includes\sidebar.php';?>
+    <?php include 'includes' . DIRECTORY_SEPARATOR . 'sidebar.php';?>
